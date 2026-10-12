@@ -1,0 +1,31 @@
+"Strain","MomentumBin","MomentumRange","Difference","Uncertainty","Significance"
+"E. coli",1,"<0.65",0.0005131,0.003344,0.15
+"E. coli",2,"0.65-1.32",0.00554,0.004506,1.23
+"E. coli",3,"1.32-2.68",0.005553,0.00325,1.71
+"E. coli",4,"2.68-5.87",0.00835,0.002607,3.2
+"E. coli",5,">5.87",0.01215,0.003465,3.51
+"Bacillus subtilis",1,"<0.65",0.000255,0.0007945,0.32
+"Bacillus subtilis",2,"0.65-1.32",-0.0004494,0.001707,-0.26
+"Bacillus subtilis",3,"1.32-2.68",-3.813e-05,0.00146,-0.03
+"Bacillus subtilis",4,"2.68-5.87",0.001732,0.0009663,1.79
+"Bacillus subtilis",5,">5.87",0.003809,0.002198,1.73
+"Pseudomonas aeruginosa",1,"<0.65",0.001367,0.0006455,2.12
+"Pseudomonas aeruginosa",2,"0.65-1.32",0.002791,0.001186,2.35
+"Pseudomonas aeruginosa",3,"1.32-2.68",0.004272,0.001225,3.49
+"Pseudomonas aeruginosa",4,"2.68-5.87",0.00567,0.001795,3.16
+"Pseudomonas aeruginosa",5,">5.87",0.0101,0.001108,9.12
+"Streptococcus pneumoniae",1,"<0.65",0.0002861,0.0002419,1.18
+"Streptococcus pneumoniae",2,"0.65-1.32",0.0005358,0.0004708,1.14
+"Streptococcus pneumoniae",3,"1.32-2.68",0.0008149,0.0004141,1.97
+"Streptococcus pneumoniae",4,"2.68-5.87",0.001078,0.000645,1.67
+"Streptococcus pneumoniae",5,">5.87",0.002181,0.0004215,5.17
+"Mycobacterium tuberculosis",1,"<0.65",9.858e-06,0.0001232,0.08
+"Mycobacterium tuberculosis",2,"0.65-1.32",3.033e-05,0.0001229,0.25
+"Mycobacterium tuberculosis",3,"1.32-2.68",5.679e-05,0.0001599,0.36
+"Mycobacterium tuberculosis",4,"2.68-5.87",9.285e-05,0.0002169,0.43
+"Mycobacterium tuberculosis",5,">5.87",0.0002522,0.0003233,0.78
+"Salmonella",1,"<0.65",4.331e-06,1.456e-05,0.3
+"Salmonella",2,"0.65-1.32",9.865e-06,1.395e-05,0.71
+"Salmonella",3,"1.32-2.68",1.059e-05,3.545e-05,0.3
+"Salmonella",4,"2.68-5.87",1.251e-05,3.551e-05,0.35
+"Salmonella",5,">5.87",3.369e-06,5.014e-05,0.07

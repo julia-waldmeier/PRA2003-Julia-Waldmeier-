@@ -1,0 +1,13 @@
+"ID","Strain","WeightedAverage","Uncertainty"
+211,"E. coli WT",19.94948,0.03274
+-211,"E. coli mutant",19.91716,0.03187
+321,"Bacillus subtilis WT",2.50914,0.00477
+-321,"Bacillus subtilis mutant",2.50345,0.0055
+2212,"Pseudomonas aeruginosa WT",1.20803,0.0019
+-2212,"Pseudomonas aeruginosa antibiotic-resistant",1.18416,0.00241
+3122,"Streptococcus pneumoniae",0.27659,0.00107
+-3122,"Capsule-deficient S. pneumoniae",0.27169,0.00098
+3312,"Mycobacterium tuberculosis",0.03944,0.00028
+-3312,"Drug-resistant M. tuberculosis",0.039,0.0004
+3334,"Salmonella enterica",0.00119,0.00004
+-3334,"Salmonella mutant",0.00115,0.00005

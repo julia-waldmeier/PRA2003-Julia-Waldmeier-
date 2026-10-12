@@ -1,0 +1,7 @@
+"Strain","Constant","ConstantUncertainty","Significance","Chi2","ndf","pValue"
+"E. coli",0.006652,0.001468,4.53,6.49,4,0.17
+"Bacillus subtilis",0.0007825,0.0005217,1.5,4.14,4,0.39
+"Pseudomonas aeruginosa",0.003692,0.0004517,8.17,48.44,4,0
+"Streptococcus pneumoniae",0.0007592,0.0001679,4.52,15.69,4,0
+"Mycobacterium tuberculosis",4.586e-05,7.036e-05,0.65,0.56,4,0.97
+"Salmonella",7.668e-06,9.189e-06,0.83,0.11,4,1
