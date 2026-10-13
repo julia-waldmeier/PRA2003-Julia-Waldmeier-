@@ -142,6 +142,10 @@ lecture (slide 11: 3σ ≈ 1-in-740 chance of being a statistical fluctuation,
 Set 10 is left out of this analysis, because its momentum distribution is
 very different from the other nine files (see section 7).
 
+The same analysis (steps 3 to 5 and the plots) is also done in Python, in
+`momentumDifference.py`, using pandas, numpy and matplotlib. It reads the
+same saved counts and gives the same results (see the end of section 7).
+
 ## 4. Q1: Average number of each strain per event
 
 Combined across all 10 sub-samples (**4,617,993 valid events**, out of
@@ -212,7 +216,7 @@ formula correctly describes the real spread, or underestimates it.
 noise) for the rarest strains, but climbs as high as ~5× for the most
 abundant strain (E. coli). This is a systematic, abundance-dependent
 pattern, not random noise: for high-count strains, the individual files'
-Poisson uncertainty clearly *understates* the real uncertainty, since it
+Poisson uncertainty clearly understates the real uncertainty, since it
 assumes fully independent random counting and ignores real extra
 correlation/clustering in how bacteria appear within an event. This is
 exactly why the sub-sampling method (the empirical spread across 10
@@ -340,6 +344,22 @@ lead to the same conclusion either way: *P. aeruginosa* is significant with
 and without Set 10, and *B. subtilis*, *M. tuberculosis* and *Salmonella*
 are not significant in either case.
 
+### Python version
+
+`momentumDifference.py` repeats the calculation in Python (pandas for
+reading the CSV files and computing the mean and standard deviation per bin,
+numpy for the constant fit, matplotlib for the plot). It starts from the
+same saved counts per file and bin, so it does not need the raw data.
+
+![WT − mutant difference per event vs momentum, Sets 1–9, made with Python](momentum_difference_python.png)
+
+The Python results agree with the R results in the tables above, for both
+Sets 1–9 and all 10 sets. The only differences are in the last digit (for
+example 8.18σ instead of 8.17σ for *P. aeruginosa*), because the R script
+rounds the values per bin to 4 significant figures before the fit, while
+the Python script does not round. The plot for all 10 sets made with Python
+is `momentum_difference_all_sets_python.png`.
+
 ## 8. Limitations
 
 - **Set 10 is excluded from the momentum analysis**, because its momentum
@@ -430,6 +450,12 @@ per bin for such a small difference to be measurable.
    and, for comparison, for all 10 sets (`momentum_difference_*_all_sets`).
    The excluded set is chosen with the setting `excludedSets` at the top of
    the script.
+6. Optionally, run `python3 momentumDifference.py`, the Python version of
+   step 5. It needs the files from step 5 (`momentum_perfile_results.csv`,
+   `momentum_bin_edges.csv`) and `subsample_results.csv`, and writes
+   `momentum_difference_python.png` and
+   `momentum_difference_all_sets_python.png`. It needs Python 3 with
+   pandas, numpy, scipy and matplotlib.
 
 ## 11. Files in this repository
 
@@ -450,4 +476,7 @@ per bin for such a small difference to be measurable.
 | `momentum_difference_results_all_sets.csv`  | Same as above, all 10 sets (comparison)                                   |
 | `momentum_difference_fit_all_sets.csv`      | Same as above, all 10 sets (comparison)                                   |
 | `momentum_difference_all_sets.png`          | Plot of section 7, all 10 sets (comparison)                               |
+| `momentumDifference.py`                     | Python version of the momentum analysis and plots (section 7)             |
+| `momentum_difference_python.png`            | Plot of section 7 made with Python, Sets 1–9                              |
+| `momentum_difference_all_sets_python.png`   | Plot of section 7 made with Python, all 10 sets (comparison)              |
 | `README.md`                                 | This file                                                                 |
